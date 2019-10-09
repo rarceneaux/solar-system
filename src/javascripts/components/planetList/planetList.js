@@ -8,10 +8,11 @@ import './planetList.scss';
 
 const createPlanetList = () => {
   const planets = planetData.getPlanets();
-  let domString = '<ul class="planet">';
+  let domString = '<div class="planet">';
   planets.forEach((planet) => {
     domString += planetCard.createPlanetCard(planet);
   });
+  domString += '</div>';
   $('#planets').append(domString);
 };
 
