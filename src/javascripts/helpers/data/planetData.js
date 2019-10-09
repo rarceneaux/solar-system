@@ -72,3 +72,7 @@ const planets = [
     nameOfLargestMoon: 'None',
   },
 ];
+
+const getPlanets = () => planets;
+
+export default { getPlanets };
