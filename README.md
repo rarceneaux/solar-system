@@ -1,2 +1,2 @@
 # solar-system
-Solar Syste
+Solar System
