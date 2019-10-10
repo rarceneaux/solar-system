@@ -3,6 +3,7 @@ import './planetCard.scss';
 const createPlanetCard = (planet) => {
   const planetString = `
   <div class="card text-center ${planet.id}"  style="width: 18rem;">
+  <div class="remove"><i class="fas fa-times-circle"></i> </div>
   <img class="card-img-top" src="${planet.imageUrl}" alt="Card image cap">
   <div class="card-body">
     <h2 class="card-title">${planet.name}</h2>

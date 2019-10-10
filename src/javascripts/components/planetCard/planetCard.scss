@@ -1,3 +1,16 @@
-.card{
+.planet{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: 25px;
+}
+
+.card{
+  margin: 30px;
+}
+
+.remove{
+  display: flex;
+  justify-content: flex-end;
 }
