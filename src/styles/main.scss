@@ -4,16 +4,6 @@ body{
   background-color: lightgray;
 }
 
-.card-img-top{
-  border-radius:15px;
-  padding:10px;
-};
-
-
-.img{
-  height: 200px;
-  width: 200px;
-};
 
 #input-info{
   background-color: lightgreen;
@@ -26,3 +16,12 @@ body{
   justify-content: center;
   padding: 25px 0 0 0;
 };
+
+
+#planets{
+  display: flex;
+  flex-direction: row;  
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 25px;
+}

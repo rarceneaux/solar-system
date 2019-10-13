@@ -6,14 +6,24 @@ import planetCard from '../planetCard/planetCard';
 
 import './planetList.scss';
 
-const createPlanetList = () => {
+const nameOnlyList = () => {
   const planets = planetData.getPlanets();
-  let domString = '<div class="planet">';
-  planets.forEach((planet) => {
-    domString += planetCard.createPlanetCard(planet);
+  let domStringA = '<div>';
+  planets.forEach((name) => {
+    domStringA += planetCard.pageLoadCard(name);
   });
-  domString += '</div>';
-  $('#planets').append(domString);
+  domStringA += '</div>';
+  $('#planets').html(domStringA);
 };
 
-export default { createPlanetList };
+// const createPlanetList = () => {
+//   const planets = planetData.getPlanets();
+//   let domString = '<div class="planetA">';
+//   planets.forEach((planet) => {
+//     domString += planetCard.createPlanetCard(planet);
+//   });
+//   domString += '</div>';
+//   $('#planetsA').html(domString);
+// };
+
+export default { nameOnlyList };
