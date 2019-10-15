@@ -16,14 +16,15 @@ const nameOnlyList = () => {
   $('#planets').html(domStringA);
 };
 
-// const createPlanetList = () => {
-//   const planets = planetData.getPlanets();
-//   let domString = '<div class="planetA">';
-//   planets.forEach((planet) => {
-//     domString += planetCard.createPlanetCard(planet);
-//   });
-//   domString += '</div>';
-//   $('#planetsA').html(domString);
-// };
+const createPlanetList = () => {
+  const planets = planetData.getPlanets();
+  let domString = '<div>';
+  planets.forEach((planet) => {
+    domString += planetCard.createPlanetCard(planet);
+  });
+  domString += '</div>';
+  $('#planet').html(domString);
+};
 
-export default { nameOnlyList };
+
+export default { nameOnlyList, createPlanetList };

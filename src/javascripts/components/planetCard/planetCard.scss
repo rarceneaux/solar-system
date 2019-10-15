@@ -1,19 +1,25 @@
-.remove{
+#planets{
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row;  
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#planet{
+  display: flex;
+  justify-content: center;
+}
+
+
+.full{
+  margin:25px;
 }
 
 .card{
   margin:25px;
+}
+
+#card-img-top{
   height: 300px;
-  // width: 300px;
-};
-
-// .hidden{
-//   display: none;
-// }
-
- h1 .card-title{
-  align-self: center;
-  position: absolute;
+  width: 300px;
 }
