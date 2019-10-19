@@ -1,23 +1,36 @@
-// import $ from 'jquery';
+import $ from 'jquery';
 
 import './planetCard.scss';
+
 
 const pageLoadCard = (planet) => {
   const nameString = `
   <div class="card text-center name-pic" id="${planet.id}">
+  <img class="card-img-top planet-pic hide" src="${planet.imageUrl}" alt="${planet.id}"> 
   <div class="card-body">
-    <h1  id="${planet.id}" class="card-title">${planet.name}</h1>
-    <img class="card-img-top planet-pic" src="${planet.imageUrl}" alt="${planet.id}"></img> 
+    <h1  id="title" class="card-title-a">${planet.name}</h1>
     </div>
-   </div>
-</div>`;
+    </div>`;
   return nameString;
 };
+
+const cardListEvents = () => {
+  $('body').on('mouseenter', '.card', (e) => {
+    $(e.target).find('.planet-pic').removeClass('hide');
+    $(e.target).find('.card-title-a').addClass('hide');
+  });
+
+  $('body').on('mouseleave', '.card', (e) => {
+    $(e.target).find('.card-title-a').removeClass('hide');
+    $(e.target).find('.planet-pic').addClass('hide');
+  });
+};
+cardListEvents();
 
 const createPlanetCard = (planet) => {
   const planetString = `
   <div class="card text-center full ${planet.id}"  style="width: 18rem;">
-  <div class="remove fas fa-times-circle fa-3x"></div>
+  <div class="remove">X</div>
   <img class="card-img-top" src="${planet.imageUrl}" alt="Card image cap">
   <div class="card-body">
     <h2 class="card-title">${planet.name}</h2>
