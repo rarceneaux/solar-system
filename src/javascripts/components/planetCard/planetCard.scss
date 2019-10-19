@@ -1,8 +1,9 @@
-#planets{
+#test{
   display: flex;
   flex-direction: row;  
   justify-content: center;
   flex-wrap: wrap;
+  margin: 25px;
 }
 
 #planet{
@@ -10,16 +11,25 @@
   justify-content: center;
 }
 
-
 .full{
-  margin:25px;
+  margin: 50px;
 }
 
-.card{
-  margin:25px;
-}
 
-#card-img-top{
+.name-pic{
+  margin: 25px;
   height: 300px;
   width: 300px;
+  *{
+    pointer-events: none;
+  }
+}
+
+.remove{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hide{
+  display: none;
 }

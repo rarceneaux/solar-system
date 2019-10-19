@@ -1,9 +1,8 @@
 @import "~bootstrap/scss/bootstrap";
 
-// body{
-//   background-color: lightgray;
-// }
-
+body{
+  background-color: lightgray;
+}
 
 #input-info{
   background-color: lightgreen;
@@ -16,3 +15,13 @@
   justify-content: center;
   padding: 25px 0 0 0;
 };
+
+.card{
+  background-color: black;
+  color: darkred;
+}
+
+#main-title{
+  text-align: center;
+  margin: 35px;
+}

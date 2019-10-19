@@ -6,7 +6,6 @@ import inputForm from './components/inputForm/inputForm';
 
 const init = () => {
   planetList.nameOnlyList();
-  planetList.createPlanetList();
   inputForm.makeInputField();
 };
 init();
